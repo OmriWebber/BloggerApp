@@ -1,16 +1,18 @@
-var APIKey;
+var APIKey, blogID, serverName;
 $.ajax({
 	url: "config/config.json",
 	dataType:"json",
 	success:function(data){
-		APIKey = data.APIKey
+		APIKey = data.APIKey;
+		blogID = data.project_id;
+		serverName = data.serverName;
 		getPosts();
 	}
 });
 
 function getPosts(){
 	$.ajax({
-		url: "https://www.googleapis.com/blogger/v3/blogs/8963739832928580166/posts?key="+APIKey,
+		url: "https://www.googleapis.com/blogger/v3/blogs/" + blogID + "/posts?key="+APIKey,
 		type: "GET",
 		dataType:"jsonp",
 		beforeSend: function(x) {
@@ -19,6 +21,7 @@ function getPosts(){
 			}
 		},
 	    success: function(result) {
+				console.log(result);
 	    	var posts = result.items;
 	        for (var i = 0; i < posts.length; i++) {
 	          $("#mainContent").append("<div class='col-sm-10 col-sm-offset-1'>" +
@@ -58,7 +61,7 @@ $("#postForm").submit(function(event){
 	console.log("form sent");
 	var title = $("#title").val();
 	var content = $("#content").val();
-	var url = "http://localhost:3000/createGoogleBloggerPost";
+	var url = "https://" + serverName + ".behance.mathewboyles.com/createGoogleBloggerPost";
 	if(title.length == 0){
 		alert("please enter a title");
 		return;
@@ -81,4 +84,3 @@ $("#postForm").submit(function(event){
         }
 	})
 });
-

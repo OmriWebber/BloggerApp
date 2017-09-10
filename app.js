@@ -26,7 +26,7 @@ app.post('/createGoogleBloggerPost', blogPost);
 app.get("/sendPost", blogCallBack);
 
 function getOAuthClient() {
-    return new OAuth2(config.ClientID, config.ClientSecret, 'http://localhost:3000/sendPost');
+    return new OAuth2(config.ClientID, config.ClientSecret, 'https://' + config.serverName + '.behance.mathewboyles.com/sendPost');
 }
 
 function getAuthUrl() {
@@ -57,7 +57,7 @@ function blogCallBack(req, res) {
             oauth2Client.setCredentials(tokens);
             blogger.posts.insert({
                 auth: oauth2Client,
-                blogId: '8963739832928580166',
+                blogId: config.project_id,
                 resource: {
                   title: body['title'],
                   content: body['content']
