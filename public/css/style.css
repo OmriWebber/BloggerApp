@@ -1,0 +1,379 @@
+h1, h2, h3, h4, h5 {
+  font-family: 'Josefin Sans', sans-serif; }
+
+h3 {
+  display: inline;
+  font-size: 14px; }
+
+h2 {
+  font-size: 38px;
+}
+
+.blogPostTitle {
+  font-size: 26px;
+}
+
+h3 i {
+  display: inline; }
+h5 {
+    font-size: 12px;
+    font-weight:600;
+}
+body, html {
+  padding: 5px!important;
+  /*height:2000px; //just for testing;*/
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: #ff5722;
+  color: white;
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif; }
+
+.text-center {
+  text-align: center; }
+
+.nav {
+  height: 80px;
+  padding-left: 15px; }
+  .nav .logo {
+    float: left;
+    margin: 20px 0;
+    width: auto;
+    transition: all 0.1s ease-in; }
+  .nav .logo:hover {
+    opacity: 0.7;
+    cursor: pointer; }
+  .nav .menu {
+    float: right;
+    margin: 20px 0;
+    width: auto;
+    border-radius: 7px;
+    padding: 5px 0;
+    text-align: center;
+    background-color: white;
+    color: #f4511e;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+    .nav .menu i {
+      padding: 8px 14px;
+      font-size: 22px;
+      transition: all 0.1s ease-in; }
+    .nav .menu i:hover {
+      opacity: 0.7;
+      cursor: pointer; }
+
+.mainContent .header {
+  /*display: inline-block;*/
+  width: 610px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+margin-bottom: 30px;
+}
+  .mainContent .header h1 {
+    font-weight: 800;
+    font-size: 52px;
+    margin-bottom: 50px;
+    margin-top: 70px; }
+
+.mainContent .col-sm-10 {
+  margin-bottom: 100px;
+}
+
+.mainContent .blogPostContent p {
+  font-size: 16px;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  font-family: "Josefin Sans";
+  font-weight:100;
+}
+.mainContent .typewriter {
+  padding-right: 18px;
+  line-height: 52px;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid transparent;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end 8; }
+
+.add-post {
+  background-color: #7c4dff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 80px;
+  width: 74px;
+  height: 74px;
+  color: white;
+  font-size: 32px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 25px;
+  margin-right: 25px;
+  z-index: 1;
+  transition: all 0.1s ease-in; }
+  .add-post i {
+    position: relative;
+    margin-top: 22px;
+    margin-left: 3px; }
+
+.add-post:hover {
+  cursor: pointer;
+  margin-bottom: 30px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+
+.blogPostBlock {
+  background-color: #E34F2B;
+  border-radius: 2px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.blogPostTitleBlock {
+  display: inline-block;
+  background-color: white;
+  margin: 0 auto;
+  width: auto;
+  color: #f4511e;
+    max-width: 700px;
+    padding: 20px 60px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  position: relative;
+  top: -50px; }
+
+  /*modal*/
+
+  #modalTitle {
+    color: white;
+    font-size: 16px;
+    /*width:100px;*/
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+.modal-header {
+  background-color: #6e42ea;
+  padding: 35px 0px 25px 25px;
+  border-bottom: none;
+
+}
+.modal-content {
+  border-radius: 2px;
+      background-color: #7c4dff;
+}
+.btn-primary, .btn-secondary {
+  text-transform: uppercase;
+  font-family: 'Josefin Sans';
+  padding-top: 9px;
+  font-weight: 400;
+}
+.btn-primary{
+  background-color: #ff5722;
+  border: 0;
+  transition: 0.1s ease-in;
+}
+.btn-primary:hover {
+  background-color: #ff7245!important;
+}
+.btn-secondary {
+  float: left;
+  background-color: #ff5722;
+  border: 0;
+  transition: 0.1s ease-in;
+}
+.btn-secondary:hover {
+  background-color: #ff7245!important;
+  color: white!important;
+}
+.modal {
+  padding-right: 0!important;
+}
+.modal-body{
+  padding: 20px 20px 0px 20px;
+}
+.modal-body #postForm {
+  width: 100%;
+}
+
+.modal-body #postForm input, .modal-body #postForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0px;
+  outline: none;
+  border: 0px;
+  border-radius: 3px;
+     background-color: rgba(255, 255, 255, 0.09);
+  color: white;
+  margin: 0 0 20px 0;
+   font-family: 'Josefin Sans';
+   font-size: 15px;
+   font-weight: 300;
+}
+
+.modal-body #postForm label {
+  color:white;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans';
+      letter-spacing: 2px;
+}
+
+textarea {
+   resize: none;
+}
+
+.modal-footer{
+  border-top: none;
+  padding: 0px 20px 20px 20px;
+}
+#title, #content{
+ transition: all 0.2s ease-out;
+   border-left: solid 0px #B39DDB!important;
+
+}
+#title:hover, #content:hover {
+   border-left: solid 8px #B39DDB!important;
+    /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
+  
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #B388FF;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #B388FF;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #B388FF;;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #B388FF;;
+}
+
+.col-sm-10 {
+  opacity: 0;
+   -webkit-animation: fadein-up 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein-up 1s; /* Firefox < 16 */
+        -ms-animation: fadein-up 1s; /* Internet Explorer */
+         -o-animation: fadein-up 1s; /* Opera < 12.1 */
+            animation: fadein-up 1s;
+            -webkit-animation-delay: 0.2s; /* Safari 4.0 - 8.0 */
+    animation-delay: 0.2s;
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation-fill-mode: forwards;
+}
+
+.pushTitle {
+  margin-top: 15px;
+  transition: all 0.5s;
+}
+
+.pushTitleFix {
+  margin-top: 0px;
+  transition: all 0.5s;
+}
+
+.nav {
+    opacity: 0;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+        -o-animation: fadein 1s; /* Opera < 12.1 */
+        animation: fadein 1s;
+        -webkit-animation-delay: 1.1s; /* Safari 4.0 - 8.0 */
+      animation-delay: 0.4s;
+      -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation-fill-mode: forwards;
+
+}
+
+.add-post {
+     opacity: 0;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+        -o-animation: fadein 1s; /* Opera < 12.1 */
+        animation: fadein 1s;
+        -webkit-animation-delay: 1.1s; /* Safari 4.0 - 8.0 */
+      animation-delay: 1.8s;
+      -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from { opacity: 0; transform: translate(0px, -20px); }
+    to   { opacity: 1; transform: translate(0px, 0px); }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; transform: translate(0px, -20px); }
+    to   { opacity: 1; transform: translate(0px, 0px); }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; transform: translate(0px, -20px); }
+    to   { opacity: 1; transform: translate(0px, 0px); }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; transform: translate(0px, -20px); }
+    to   { opacity: 1; transform: translate(0px, 0px); }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; transform: translate(0px, -20px); }
+    to   { opacity: 1; transform: translate(0px, 0px); }
+}
+/* The typing effect animation */
+@keyframes typing {
+  from {
+    width: 0; }
+
+  to {
+    width: 100%; } }
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: #FF8A65; }
+
+  50% {
+    border-color: transparent; } }
+
+
+/*fade in up*/
+@keyframes fadein-up {
+    from { opacity: 0; transform: translate(0px, 20px); }
+    to   { opacity: 1; transform: translate(0px, 0px); }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein-up {
+    from { opacity: 0; transform: translate(0px, 20px); }
+    to   { opacity: 1; transform: translate(0px, 0px); }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein-up {
+    from { opacity: 0; transform: translate(0px, 20px); }
+    to   { opacity: 1; transform: translate(0px, 0px); }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein-up {
+    from { opacity: 0; transform: translate(0px, 20px); }
+    to   { opacity: 1; transform: translate(0px, 0px); }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein-up {
+    from { opacity: 0; transform: translate(0px, 20px); }
+    to   { opacity: 1; transform: translate(0px, 0px); }
+}

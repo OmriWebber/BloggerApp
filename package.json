@@ -1,0 +1,27 @@
+{
+  "name": "typespace-formative",
+  "version": "1.0.0",
+  "description": "Web Appliction using the blogger API to show posts from blogger blogs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Omri Webber & Tim Stannard",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "body-parser": "^1.17.2",
+    "bootstrap": "^3.3.7",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "font-awesome": "^4.7.0",
+    "googleapis": "^21.3.0",
+    "jquery": "^3.2.1",
+    "moment": "^2.18.1",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  }
+}
