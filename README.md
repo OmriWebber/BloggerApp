@@ -1,0 +1,2 @@
+# typespace-formative
+# BloggerApp
